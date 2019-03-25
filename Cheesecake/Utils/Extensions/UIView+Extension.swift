@@ -21,8 +21,8 @@ public extension UIView {
                 self.setNeedsLayout()
                 self.layoutIfNeeded()
                 let activityIndicatorView = UIActivityIndicatorView(frame:
-                    CGRect(x: self.frame.width/2-ActivityIndicatorViewSize/2,
-                           y: self.frame.height/2-ActivityIndicatorViewSize/2-30,
+                    CGRect(x: self.center.x-(ActivityIndicatorViewSize/2),
+                           y: self.center.y-(ActivityIndicatorViewSize/2),
                            width: ActivityIndicatorViewSize,
                            height: ActivityIndicatorViewSize))
                 activityIndicatorView.style = .gray
