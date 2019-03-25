@@ -7,21 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D8EE8AF71C532B86F04C766 /* Pods_Cheesecake.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EDA42E4D43B3C5D1B524759 /* Pods_Cheesecake.framework */; };
 		FC64D41322471AC40039C472 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC64D41222471AC40039C472 /* AppDelegate.swift */; };
-		FC64D41522471AC40039C472 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC64D41422471AC40039C472 /* ViewController.swift */; };
 		FC64D41822471AC40039C472 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC64D41622471AC40039C472 /* Main.storyboard */; };
 		FC64D41A22471AC60039C472 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC64D41922471AC60039C472 /* Assets.xcassets */; };
 		FC64D41D22471AC60039C472 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC64D41B22471AC60039C472 /* LaunchScreen.storyboard */; };
+		FC64D42622471AFB0039C472 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC64D42522471AFB0039C472 /* NewsViewController.swift */; };
+		FC64D42822471B120039C472 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC64D42722471B120039C472 /* NewsViewModel.swift */; };
+		FC64D42D22471C8C0039C472 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC64D42C22471C8C0039C472 /* Item.swift */; };
+		FC64D4312248344E0039C472 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC64D4302248344E0039C472 /* UIViewController+Extension.swift */; };
+		FC64D433224836CB0039C472 /* Reactive+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC64D432224836CB0039C472 /* Reactive+Extension.swift */; };
+		FC64D435224851120039C472 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC64D434224851120039C472 /* UIView+Extension.swift */; };
+		FC64D437224854F80039C472 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC64D436224854F80039C472 /* NSObject+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A94D33A48AACAC0143DF061 /* Pods-Cheesecake.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cheesecake.release.xcconfig"; path = "Target Support Files/Pods-Cheesecake/Pods-Cheesecake.release.xcconfig"; sourceTree = "<group>"; };
+		8EDA42E4D43B3C5D1B524759 /* Pods_Cheesecake.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cheesecake.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FADF762152C85E4619A0993C /* Pods-Cheesecake.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cheesecake.debug.xcconfig"; path = "Target Support Files/Pods-Cheesecake/Pods-Cheesecake.debug.xcconfig"; sourceTree = "<group>"; };
 		FC64D40F22471AC40039C472 /* Cheesecake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cheesecake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC64D41222471AC40039C472 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FC64D41422471AC40039C472 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FC64D41722471AC40039C472 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC64D41922471AC60039C472 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC64D41C22471AC60039C472 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC64D41E22471AC60039C472 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC64D42522471AFB0039C472 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		FC64D42722471B120039C472 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		FC64D42C22471C8C0039C472 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		FC64D4302248344E0039C472 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		FC64D432224836CB0039C472 /* Reactive+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reactive+Extension.swift"; sourceTree = "<group>"; };
+		FC64D434224851120039C472 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		FC64D436224854F80039C472 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D8EE8AF71C532B86F04C766 /* Pods_Cheesecake.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		689A7386C37F18EC91C61B4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EDA42E4D43B3C5D1B524759 /* Pods_Cheesecake.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBFAEFFB0E37F78C84A4D6E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FADF762152C85E4619A0993C /* Pods-Cheesecake.debug.xcconfig */,
+				5A94D33A48AACAC0143DF061 /* Pods-Cheesecake.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FC64D40622471AC40039C472 = {
 			isa = PBXGroup;
 			children = (
 				FC64D41122471AC40039C472 /* Cheesecake */,
 				FC64D41022471AC40039C472 /* Products */,
+				FBFAEFFB0E37F78C84A4D6E1 /* Pods */,
+				689A7386C37F18EC91C61B4B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +90,68 @@
 		FC64D41122471AC40039C472 /* Cheesecake */ = {
 			isa = PBXGroup;
 			children = (
+				FC64D42E224834250039C472 /* Utils */,
+				FC64D42B22471BE60039C472 /* View */,
+				FC64D42A22471BB40039C472 /* Service */,
+				FC64D42922471BAC0039C472 /* Model */,
+				FC64D42422471AD20039C472 /* Modules */,
 				FC64D41222471AC40039C472 /* AppDelegate.swift */,
-				FC64D41422471AC40039C472 /* ViewController.swift */,
-				FC64D41622471AC40039C472 /* Main.storyboard */,
 				FC64D41922471AC60039C472 /* Assets.xcassets */,
-				FC64D41B22471AC60039C472 /* LaunchScreen.storyboard */,
 				FC64D41E22471AC60039C472 /* Info.plist */,
 			);
 			path = Cheesecake;
+			sourceTree = "<group>";
+		};
+		FC64D42422471AD20039C472 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				FC64D42522471AFB0039C472 /* NewsViewController.swift */,
+				FC64D42722471B120039C472 /* NewsViewModel.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		FC64D42922471BAC0039C472 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC64D42C22471C8C0039C472 /* Item.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC64D42A22471BB40039C472 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		FC64D42B22471BE60039C472 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC64D41622471AC40039C472 /* Main.storyboard */,
+				FC64D41B22471AC60039C472 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC64D42E224834250039C472 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FC64D42F2248342B0039C472 /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FC64D42F2248342B0039C472 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FC64D4302248344E0039C472 /* UIViewController+Extension.swift */,
+				FC64D432224836CB0039C472 /* Reactive+Extension.swift */,
+				FC64D434224851120039C472 /* UIView+Extension.swift */,
+				FC64D436224854F80039C472 /* NSObject+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +161,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC64D42122471AC60039C472 /* Build configuration list for PBXNativeTarget "Cheesecake" */;
 			buildPhases = (
+				42EB14B6EC8E963DB31F960C /* [CP] Check Pods Manifest.lock */,
 				FC64D40B22471AC40039C472 /* Sources */,
 				FC64D40C22471AC40039C472 /* Frameworks */,
 				FC64D40D22471AC40039C472 /* Resources */,
+				E8D953B52466D146E83ED05D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +222,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		42EB14B6EC8E963DB31F960C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cheesecake-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8D953B52466D146E83ED05D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cheesecake/Pods-Cheesecake-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cheesecake/Pods-Cheesecake-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FC64D40B22471AC40039C472 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC64D41522471AC40039C472 /* ViewController.swift in Sources */,
+				FC64D42D22471C8C0039C472 /* Item.swift in Sources */,
+				FC64D435224851120039C472 /* UIView+Extension.swift in Sources */,
+				FC64D42622471AFB0039C472 /* NewsViewController.swift in Sources */,
+				FC64D437224854F80039C472 /* NSObject+Extension.swift in Sources */,
 				FC64D41322471AC40039C472 /* AppDelegate.swift in Sources */,
+				FC64D4312248344E0039C472 /* UIViewController+Extension.swift in Sources */,
+				FC64D433224836CB0039C472 /* Reactive+Extension.swift in Sources */,
+				FC64D42822471B120039C472 /* NewsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +429,7 @@
 		};
 		FC64D42222471AC60039C472 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FADF762152C85E4619A0993C /* Pods-Cheesecake.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +448,7 @@
 		};
 		FC64D42322471AC60039C472 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A94D33A48AACAC0143DF061 /* Pods-Cheesecake.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

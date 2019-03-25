@@ -8,6 +8,15 @@
 
 import UIKit
 
-class UIViewController_Extension: NSObject {
+extension UIViewController {
 
+    func startAnimating() {
+        self.view.activityIndicatorView.startAnimating()
+        print("startAnimating")
+    }
+    
+    func stopAnimating() {
+        self.view.activityIndicatorView.stopAnimating()
+        print("stopAnimating")
+    }
 }

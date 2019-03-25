@@ -7,13 +7,20 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 class NewsViewController: UIViewController {
 
+    let viewModel: NewsViewModelProtocol! = NewsViewModel()
+    let disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        viewModel.isLoading.bind(to: self.rx.isAnimating).disposed(by: disposeBag)
+        
+        viewModel.requestNews()
     }
     
 
