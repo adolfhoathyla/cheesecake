@@ -19,6 +19,10 @@
 		FC64D433224836CB0039C472 /* Reactive+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC64D432224836CB0039C472 /* Reactive+Extension.swift */; };
 		FC64D435224851120039C472 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC64D434224851120039C472 /* UIView+Extension.swift */; };
 		FC64D437224854F80039C472 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC64D436224854F80039C472 /* NSObject+Extension.swift */; };
+		FCB7041F224FB8FF00CD4FAC /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB7041E224FB8FF00CD4FAC /* Mock.swift */; };
+		FCB70423224FC32B00CD4FAC /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB70421224FC32B00CD4FAC /* ItemTableViewCell.swift */; };
+		FCB70424224FC32B00CD4FAC /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCB70422224FC32B00CD4FAC /* ItemTableViewCell.xib */; };
+		FCB70427224FCFF600CD4FAC /* Namespace+Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB70426224FCFF600CD4FAC /* Namespace+Cells.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		FC64D432224836CB0039C472 /* Reactive+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reactive+Extension.swift"; sourceTree = "<group>"; };
 		FC64D434224851120039C472 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		FC64D436224854F80039C472 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
+		FCB7041E224FB8FF00CD4FAC /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
+		FCB70421224FC32B00CD4FAC /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		FCB70422224FC32B00CD4FAC /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
+		FCB70426224FCFF600CD4FAC /* Namespace+Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Namespace+Cells.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +130,7 @@
 		FC64D42A22471BB40039C472 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				FCB7041E224FB8FF00CD4FAC /* Mock.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -129,6 +138,7 @@
 		FC64D42B22471BE60039C472 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FCB70420224FC2E700CD4FAC /* Cells */,
 				FC64D41622471AC40039C472 /* Main.storyboard */,
 				FC64D41B22471AC60039C472 /* LaunchScreen.storyboard */,
 			);
@@ -138,6 +148,7 @@
 		FC64D42E224834250039C472 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				FCB70425224FCF3F00CD4FAC /* Namespaces */,
 				FC64D42F2248342B0039C472 /* Extensions */,
 			);
 			path = Utils;
@@ -152,6 +163,23 @@
 				FC64D436224854F80039C472 /* NSObject+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FCB70420224FC2E700CD4FAC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FCB70421224FC32B00CD4FAC /* ItemTableViewCell.swift */,
+				FCB70422224FC32B00CD4FAC /* ItemTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FCB70425224FCF3F00CD4FAC /* Namespaces */ = {
+			isa = PBXGroup;
+			children = (
+				FCB70426224FCFF600CD4FAC /* Namespace+Cells.swift */,
+			);
+			path = Namespaces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCB70424224FC32B00CD4FAC /* ItemTableViewCell.xib in Resources */,
 				FC64D41D22471AC60039C472 /* LaunchScreen.storyboard in Resources */,
 				FC64D41A22471AC60039C472 /* Assets.xcassets in Resources */,
 				FC64D41822471AC40039C472 /* Main.storyboard in Resources */,
@@ -280,12 +309,15 @@
 			files = (
 				FC64D42D22471C8C0039C472 /* Item.swift in Sources */,
 				FC64D435224851120039C472 /* UIView+Extension.swift in Sources */,
+				FCB70423224FC32B00CD4FAC /* ItemTableViewCell.swift in Sources */,
 				FC64D42622471AFB0039C472 /* NewsViewController.swift in Sources */,
 				FC64D437224854F80039C472 /* NSObject+Extension.swift in Sources */,
 				FC64D41322471AC40039C472 /* AppDelegate.swift in Sources */,
 				FC64D4312248344E0039C472 /* UIViewController+Extension.swift in Sources */,
 				FC64D433224836CB0039C472 /* Reactive+Extension.swift in Sources */,
+				FCB70427224FCFF600CD4FAC /* Namespace+Cells.swift in Sources */,
 				FC64D42822471B120039C472 /* NewsViewModel.swift in Sources */,
+				FCB7041F224FB8FF00CD4FAC /* Mock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
