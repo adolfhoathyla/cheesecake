@@ -6,7 +6,7 @@ target 'Cheesecake' do
   use_frameworks!
 
   # Pods for Cheesecake
-  pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'Moya/RxSwift'
 
 end

@@ -11,35 +11,42 @@ import RxSwift
 import RxCocoa
 
 protocol NewsViewModelProtocol {
-    var itens: BehaviorRelay<[Item]> { get set }
+    var items: BehaviorRelay<[Item]> { get set }
     var isLoading: PublishSubject<Bool> { get set }
-    func requestNews()
+    var provider: Networkable { get set }
+    func requestNews(disposeBag: DisposeBag)
     func numberOfRows() -> Int
     func getItem(in indexPath: IndexPath) -> Item
 }
 
 class NewsViewModel: NSObject, NewsViewModelProtocol {
     
-    var itens: BehaviorRelay<[Item]> = BehaviorRelay(value: [])
+    var items: BehaviorRelay<[Item]> = BehaviorRelay(value: [])
     var isLoading: PublishSubject<Bool> = PublishSubject()
+    var provider: Networkable = NetworkManager()
     
     // MARK: - request data
-    func requestNews() {
+    func requestNews(disposeBag: DisposeBag) {
         isLoading.onNext(true)
         
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 5.0) { [weak self] in
+        provider.getAllItems(disposeBag: disposeBag) { [weak self] (items, success, error) in
             self?.isLoading.onNext(false)
-            self?.itens.accept(Mock.getAllItens())
+            if let items = items, success, error == nil {
+                self?.items.accept(items)
+            } else {
+                print(error ?? "Error nil")
+            }
         }
+
     }
 
     // MARK: - table view
     func numberOfRows() -> Int {
-        return itens.value.count
+        return items.value.count
     }
     
     func getItem(in indexPath: IndexPath) -> Item {
-        return itens.value[indexPath.row]
+        return items.value[indexPath.row]
     }
     
 }

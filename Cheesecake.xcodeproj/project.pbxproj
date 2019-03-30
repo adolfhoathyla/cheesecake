@@ -19,10 +19,13 @@
 		FC64D433224836CB0039C472 /* Reactive+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC64D432224836CB0039C472 /* Reactive+Extension.swift */; };
 		FC64D435224851120039C472 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC64D434224851120039C472 /* UIView+Extension.swift */; };
 		FC64D437224854F80039C472 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC64D436224854F80039C472 /* NSObject+Extension.swift */; };
-		FCB7041F224FB8FF00CD4FAC /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB7041E224FB8FF00CD4FAC /* Mock.swift */; };
 		FCB70423224FC32B00CD4FAC /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB70421224FC32B00CD4FAC /* ItemTableViewCell.swift */; };
 		FCB70424224FC32B00CD4FAC /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCB70422224FC32B00CD4FAC /* ItemTableViewCell.xib */; };
 		FCB70427224FCFF600CD4FAC /* Namespace+Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB70426224FCFF600CD4FAC /* Namespace+Cells.swift */; };
+		FCB70429224FE60B00CD4FAC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB70428224FE60B00CD4FAC /* NetworkManager.swift */; };
+		FCB7042B224FE61C00CD4FAC /* Networkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB7042A224FE61C00CD4FAC /* Networkable.swift */; };
+		FCB7042D224FE63B00CD4FAC /* ItemApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB7042C224FE63B00CD4FAC /* ItemApi.swift */; };
+		FCB70430224FE7A700CD4FAC /* News.json in Resources */ = {isa = PBXBuildFile; fileRef = FCB7042F224FE7A700CD4FAC /* News.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,10 +45,13 @@
 		FC64D432224836CB0039C472 /* Reactive+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reactive+Extension.swift"; sourceTree = "<group>"; };
 		FC64D434224851120039C472 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		FC64D436224854F80039C472 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
-		FCB7041E224FB8FF00CD4FAC /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
 		FCB70421224FC32B00CD4FAC /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		FCB70422224FC32B00CD4FAC /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
 		FCB70426224FCFF600CD4FAC /* Namespace+Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Namespace+Cells.swift"; sourceTree = "<group>"; };
+		FCB70428224FE60B00CD4FAC /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FCB7042A224FE61C00CD4FAC /* Networkable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networkable.swift; sourceTree = "<group>"; };
+		FCB7042C224FE63B00CD4FAC /* ItemApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemApi.swift; sourceTree = "<group>"; };
+		FCB7042F224FE7A700CD4FAC /* News.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = News.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,7 @@
 		FC64D41122471AC40039C472 /* Cheesecake */ = {
 			isa = PBXGroup;
 			children = (
+				FCB7042E224FE78900CD4FAC /* StubbedResponse */,
 				FC64D42E224834250039C472 /* Utils */,
 				FC64D42B22471BE60039C472 /* View */,
 				FC64D42A22471BB40039C472 /* Service */,
@@ -130,7 +137,9 @@
 		FC64D42A22471BB40039C472 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				FCB7041E224FB8FF00CD4FAC /* Mock.swift */,
+				FCB70428224FE60B00CD4FAC /* NetworkManager.swift */,
+				FCB7042A224FE61C00CD4FAC /* Networkable.swift */,
+				FCB7042C224FE63B00CD4FAC /* ItemApi.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -180,6 +189,14 @@
 				FCB70426224FCFF600CD4FAC /* Namespace+Cells.swift */,
 			);
 			path = Namespaces;
+			sourceTree = "<group>";
+		};
+		FCB7042E224FE78900CD4FAC /* StubbedResponse */ = {
+			isa = PBXGroup;
+			children = (
+				FCB7042F224FE7A700CD4FAC /* News.json */,
+			);
+			path = StubbedResponse;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +262,7 @@
 				FCB70424224FC32B00CD4FAC /* ItemTableViewCell.xib in Resources */,
 				FC64D41D22471AC60039C472 /* LaunchScreen.storyboard in Resources */,
 				FC64D41A22471AC60039C472 /* Assets.xcassets in Resources */,
+				FCB70430224FE7A700CD4FAC /* News.json in Resources */,
 				FC64D41822471AC40039C472 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +301,9 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Cheesecake/Pods-Cheesecake-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -291,6 +312,9 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -307,8 +331,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCB70429224FE60B00CD4FAC /* NetworkManager.swift in Sources */,
 				FC64D42D22471C8C0039C472 /* Item.swift in Sources */,
 				FC64D435224851120039C472 /* UIView+Extension.swift in Sources */,
+				FCB7042B224FE61C00CD4FAC /* Networkable.swift in Sources */,
 				FCB70423224FC32B00CD4FAC /* ItemTableViewCell.swift in Sources */,
 				FC64D42622471AFB0039C472 /* NewsViewController.swift in Sources */,
 				FC64D437224854F80039C472 /* NSObject+Extension.swift in Sources */,
@@ -316,8 +342,8 @@
 				FC64D4312248344E0039C472 /* UIViewController+Extension.swift in Sources */,
 				FC64D433224836CB0039C472 /* Reactive+Extension.swift in Sources */,
 				FCB70427224FCFF600CD4FAC /* Namespace+Cells.swift in Sources */,
+				FCB7042D224FE63B00CD4FAC /* ItemApi.swift in Sources */,
 				FC64D42822471B120039C472 /* NewsViewModel.swift in Sources */,
-				FCB7041F224FB8FF00CD4FAC /* Mock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

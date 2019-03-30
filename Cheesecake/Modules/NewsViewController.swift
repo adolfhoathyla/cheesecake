@@ -23,31 +23,21 @@ class NewsViewController: UIViewController {
         
         viewModel.isLoading.bind(to: self.rx.isAnimating).disposed(by: disposeBag)
         
-        viewModel.requestNews()
+        viewModel.requestNews(disposeBag: disposeBag)
         
-        viewModel.itens.subscribe { [weak self] (event) in
+        viewModel.items.subscribe { [weak self] (event) in
             self?.tableView.reloadData()
             print(event)
         }.disposed(by: disposeBag)
     }
     
     private func configTableView() {
-        tableView.estimatedRowHeight = 60.0
+        tableView.estimatedRowHeight = 100.0
         tableView.rowHeight = UITableView.automaticDimension
         tableView.register(UINib(nibName: CellRestorationID.itemRestorationID, bundle: nil),
                            forCellReuseIdentifier: CellReuseIdentifier.itemCellReuseIdentifier)
         tableView.tableFooterView = UIView()
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 
